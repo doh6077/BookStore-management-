@@ -1,10 +1,4 @@
 <?php
-/*
-Name: Dohee Kim
-Date: 09. August. 2023
-Student Id Number: 991713105
-*/
-
 ob_start();
 session_start();
 
@@ -26,13 +20,14 @@ if (empty($conn)) {
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <title>Assignment5</title>
+    <title>BookStore</title>
 </head>
 <body>
 <img id="logo" src="indigo.png" alt="Display Logo">
 <h1>Books</h1>
 <a href="insert.php">Add new item</a> |
 <a href="view.php">Display all the records from the table</a> |
+<a href="delete.php">Delete item</a> 
 <hr>
 <br>
 <form method="post">

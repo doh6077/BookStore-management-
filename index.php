@@ -1,13 +1,8 @@
 
 <!DOCTYPE html>
 <html>
-<!--
-Name: Dohee Kim
-Date: 09. August. 2023
-Student Id Number: 991713105 
--->
 <head>
-<title>Assignment6</title>
+<title>BookStore</title>
 <link rel="stylesheet" href="style.css"> 
 
 </head>
@@ -16,6 +11,7 @@ Student Id Number: 991713105
 <h1>Books</h1>
 <a href="insert.php">Add new item</a> |
 <a href="view.php">Display all the records from the table</a> |
+<a href="delete.php">Delete item</a>  |
 <hr>
 
 </body>

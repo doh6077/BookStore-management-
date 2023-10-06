@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-
 <html>
 <head>
     <meta charset="UTF-8">
@@ -10,14 +8,14 @@
 <img id="logo" src="indigo.png" alt="Display Logo">
 <h1>Books</h1>
 <a href="insert.php">Add new item</a> |
-<a href="view.php">Display all the records from the table</a> |
+<a href="view.php">Display all the records from the table</a> 
 <a href="delete.php">Delete item</a> 
 <hr>
 <br>
-    <h2>View Products</h2>
+    <h2>Delete Products</h2>
     <form method="get">
-        Search by Book Name: <input type="text" name="search">
-        <input type="submit" value="Search">
+        Delete by Book Name: <input type="text" name="search">
+        <input type="submit" value="Delete">
     </form>
 
     <table id="books">
@@ -44,15 +42,23 @@ $conn = mysqli_connect($host, $user, $pswd, $dbname);
 
         if (!empty($searchKeyword)) {
 
-            $query = "SELECT * FROM Books WHERE BookName LIKE '%$searchKeyword%'";
+            $query = "DELETE FROM Books WHERE BookName LIKE '%$searchKeyword%'";
+            $result = mysqli_query($conn, $query);
+            if ($result) {
+                echo "<p>" . mysqli_affected_rows($conn) . " record(s) successfully deleted</p>";
+            } else {
+                echo "<p>Error deleting records: " . mysqli_error($conn) . "</p>";
+            }  
         } else {
             $query = "SELECT * FROM Books";
+            $result = mysqli_query($conn, $query);
         }
 
 
-        $result = mysqli_query($conn, $query);
+        
 
         if (mysqli_num_rows($result) > 0) {
+
             $i = 1;
             while ($row = mysqli_fetch_assoc($result)) {
                 echo "<tr>";
@@ -61,6 +67,7 @@ $conn = mysqli_connect($host, $user, $pswd, $dbname);
                 echo "<td>" . $row['Author'] . "</td>";
                 echo "<td>$" . $row['Price'] . "</td>";
                 echo "</tr>";
+                
                 $i++;
             }
         } else {

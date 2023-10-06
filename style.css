@@ -9,3 +9,8 @@ Student Id Number: 991713105
     text-align: center;
     font-family: sans-serif;
 }
+
+#logo {
+    width: 200px; 
+    height: auto; 
+}

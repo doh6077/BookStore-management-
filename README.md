@@ -1,7 +1,7 @@
-##BookStore Project
+# BookStore Project
 The BookStore project is a simple web application for managing a book catalog. It allows you to add, view, and delete book records in a MySQL database.
 
-#Introduction
+## Introduction
 This project provides a web-based interface to interact with a book catalog. It allows you to:
 
 -Add New Books: You can add new books to the catalog by providing the book name, author, and price.
@@ -10,13 +10,13 @@ This project provides a web-based interface to interact with a book catalog. It 
 
 -Delete Books: You can search for books by name and delete them from the catalog.
 
-#Features
+## Features 
 User-friendly web interface.
 MySQL database for storing book records.
 Add, view, and delete book records.
 Basic error handling for database operations.
 
-#Getting Started
+## Getting Started
 To get started with the BookStore project, follow these steps:
 
 Clone the repository to your local machine:
@@ -33,7 +33,7 @@ view.php
 delete.php
 Start your local web server and access the project using a web browser.
 
-#Usage
+## Usage
 Access the project using a web browser.
 
 Use the navigation links to add, view, and delete book records.
@@ -44,7 +44,7 @@ To view all records, click on "Display all the records from the table."
 
 To delete a book, enter the book name in the "Delete by Book Name" field and click the "Delete" button.
 
-#Database Structure
+## Database Structure
 The project uses a MySQL database with the following table structure:
 
 sql

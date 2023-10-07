@@ -5,10 +5,18 @@ The BookStore project is a simple web application for managing a book catalog. I
 This project provides a web-based interface to interact with a book catalog. It allows you to:
 
 -Add New Books: You can add new books to the catalog by providing the book name, author, and price.
+![added](https://github.com/doh6077/BookStore-management-/assets/134092191/f6b5e9cb-ed31-4043-b1e0-777c5b3eb61a)
+
+![addnewitem](https://github.com/doh6077/BookStore-management-/assets/134092191/a2910e96-0e20-4028-bc33-9f5162a0f00f)
 
 -View All Records: You can view all the records in the catalog, including book names, authors, and prices.
+![DisplayScreen](https://github.com/doh6077/BookStore-management-/assets/134092191/4c49b0eb-1c8a-4877-91a4-f7afb427927e)
 
+![SearchResult](https://github.com/doh6077/BookStore-management-/assets/134092191/541a1803-dcf2-46c9-ac5b-a99b5cb1f11b)
 -Delete Books: You can search for books by name and delete them from the catalog.
+![DeleteTypeScreen](https://github.com/doh6077/BookStore-management-/assets/134092191/9c777b4c-1824-471c-8aba-320508f5c7cc)
+
+![DeleteSuccessful](https://github.com/doh6077/BookStore-management-/assets/134092191/67642f26-d497-4ee8-9797-7dd844225192)
 
 ## Features 
 User-friendly web interface.

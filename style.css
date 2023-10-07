@@ -5,7 +5,7 @@ Student Id Number: 991713105
 */
 
 *{
-    background-color: lightblue;
+    background-color: lightcyan;
     text-align: center;
     font-family: sans-serif;
 }
@@ -28,3 +28,21 @@ tr:nth-child(even) {
   .noBorder {
       border:none !important;
   }
+table{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+label {
+    margin-bottom: 10px; 
+}
+
+
+input[type="text"] {
+    margin-top: 5px; 
+}
+
+
+input[type="submit"] {
+    margin-top: 15px; 
+}

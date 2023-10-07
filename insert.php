@@ -37,7 +37,6 @@ if (empty($conn)) {
     <input type="text" id="author" name="author"><br>
     <label for="price">Price:</label>
     <input type="text" id="price" name="price"><br>
-
     <input type="submit" value="submit" name="submit">
 </form>
 
